@@ -15,6 +15,7 @@
             <Color x:Key="PrimaryColor3">#BBC7A4</Color>
             <Color x:Key="PrimaryColor4">#D6DBD2</Color>
             <Color x:Key="PrimaryColor5">#F2F5EA</Color>
+            <Color x:Key="colorPrimaryDark">#1976D2</Color>
             <!--
                 Font Sizes
             -->

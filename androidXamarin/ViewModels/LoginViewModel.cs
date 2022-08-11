@@ -8,17 +8,22 @@ namespace androidXamarin.ViewModels
 {
     public class LoginViewModel : BaseViewModel
     {
-        public Command LoginCommand { get; }
+        public Command ConnectCommand { get; }
 
         public LoginViewModel()
         {
-            LoginCommand = new Command(OnLoginClicked);
+            ConnectCommand = new Command(OnConnectClicked);
         }
 
-        private async void OnLoginClicked(object obj)
+        private async void OnConnectClicked(object obj)
         {
             // Prefixing with `//` switches to a different navigation stack instead of pushing to the active one
             await Shell.Current.GoToAsync($"//{nameof(AboutPage)}");
+        }
+
+        private void CheckMcuConnection()
+        {
+
         }
     }
 }

@@ -5,14 +5,15 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="androidXamarin.Views.LoginPage"
-             Shell.NavBarIsVisible="false">
+             Shell.NavBarIsVisible="false"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xct:StatusBarEffect.Color="{StaticResource PrimaryColor2}">
     <ContentPage.Resources>
         <ResourceDictionary>
-            <!--
-                TODO: Add local resources here.
-            -->
+            <x:String x:Key="WelcomeMessage">Your way for IoT</x:String>
+            <x:String x:Key="ConnectButtonText">Connect MCU</x:String>
         </ResourceDictionary>
-        </ContentPage.Resources>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <Grid StyleClass="DarkBackground">
             <Grid.RowDefinitions>
@@ -21,8 +22,8 @@
                 <RowDefinition Height="40*"/>
             </Grid.RowDefinitions>
             <Image Grid.Row="0" Source="Res/CompanyLogo.png" Margin="20,0,20,0" VerticalOptions="End" HorizontalOptions="Center"/>
-            <Label Grid.Row="1" StyleClass="LightLabel" Margin="20,0,20,0" VerticalOptions="Center" HorizontalOptions="Center" Text="Oğuz bir göt olabilir mi?"/>
-            <Button Grid.Row="2" StyleClass="LightButton" Margin="20,0,20,0" VerticalOptions="CenterAndExpand" HorizontalOptions="Fill" CornerRadius="20" Text="Logın" Command="{Binding LoginCommand}"/>
+            <Label Grid.Row="1" StyleClass="LightLabel" Margin="20,0,20,0" VerticalOptions="Center" HorizontalOptions="Center" Text="{StaticResource WelcomeMessage}"/>
+            <Button Grid.Row="2" StyleClass="LightButton" Margin="20,0,20,0" VerticalOptions="CenterAndExpand" HorizontalOptions="Fill" CornerRadius="20" Text="{StaticResource ConnectButtonText}" Command="{Binding ConnectCommand}"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
