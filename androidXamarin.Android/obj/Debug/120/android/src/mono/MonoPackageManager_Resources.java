@@ -5,6 +5,7 @@ public class MonoPackageManager_Resources {
 		"androidXamarin.Android.dll",
 		"androidXamarin.dll",
 		"FormsViewGroup.dll",
+		"Plugin.Permissions.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.Annotation.Experimental.dll",

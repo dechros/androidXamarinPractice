@@ -18,3 +18,7 @@ C:\Users\hcetin\source\repos\androidXamarin\androidXamarin\obj\Debug\netstandard
 C:\Users\hcetin\source\repos\androidXamarin\androidXamarin\obj\Debug\netstandard2.0\refint\androidXamarin.dll
 C:\Users\hcetin\source\repos\androidXamarin\androidXamarin\obj\Debug\netstandard2.0\androidXamarin.pdb
 C:\Users\hcetin\source\repos\androidXamarin\androidXamarin\obj\Debug\netstandard2.0\ref\androidXamarin.dll
+C:\Users\hcetin\source\repos\androidXamarin\androidXamarin\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\Users\hcetin\source\repos\androidXamarin\androidXamarin\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Users\hcetin\source\repos\androidXamarin\androidXamarin\bin\Debug\netstandard2.0\Mono.Android.xml
+C:\Users\hcetin\source\repos\androidXamarin\androidXamarin\obj\Debug\netstandard2.0\androidXamarin.csproj.CopyComplete

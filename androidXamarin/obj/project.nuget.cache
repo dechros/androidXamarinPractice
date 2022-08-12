@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Ux2n8ZREt/XB8vD7dTsxPkJ0C1CL0D9HCilhiZhDq7VjnL4VQ/fnnCClyd664FZYT28crmFqFYCcNd24PaByaA==",
+  "dgSpecHash": "Fiv2H0KERUJBKg/ZPgN2D4HaywtqkFkX/N2FdyvFRZrXCZ+ur41EkMVV7YcIVinaNAoF6Ie8cEwmuQYT4QuMCQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\hcetin\\source\\repos\\androidXamarin\\androidXamarin\\androidXamarin.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hcetin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\hcetin\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\hcetin\\.nuget\\packages\\plugin.permissions\\6.0.1\\plugin.permissions.6.0.1.nupkg.sha512",
     "C:\\Users\\hcetin\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\hcetin\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.7.0\\system.reflection.emit.ilgeneration.4.7.0.nupkg.sha512",
     "C:\\Users\\hcetin\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512",
