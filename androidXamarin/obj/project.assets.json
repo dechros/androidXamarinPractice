@@ -26,6 +26,17 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Plugin.BLE/2.1.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Plugin.BLE.Abstractions.dll": {},
+          "lib/netstandard2.0/Plugin.BLE.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.BLE.Abstractions.dll": {},
+          "lib/netstandard2.0/Plugin.BLE.dll": {}
+        }
+      },
       "Plugin.Permissions/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -289,6 +300,41 @@
         "lib/netstandard1.0/_._",
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
+      ]
+    },
+    "Plugin.BLE/2.1.3": {
+      "sha512": "qGLGPvZWnmEjFh0sKF25efN6f5kiCaNybAlSX02F/VpgbyI5kQDjHYuJLebQ+nqbdyAnwsvz/yTZR5ioRainIg==",
+      "type": "package",
+      "path": "plugin.ble/2.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon_small.png",
+        "lib/MonoAndroid/Plugin.BLE.Abstractions.deps.json",
+        "lib/MonoAndroid/Plugin.BLE.Abstractions.dll",
+        "lib/MonoAndroid/Plugin.BLE.Abstractions.pdb",
+        "lib/MonoAndroid/Plugin.BLE.XML",
+        "lib/MonoAndroid/Plugin.BLE.dll",
+        "lib/MonoAndroid/Plugin.BLE.pdb",
+        "lib/Xamarin.iOS10/Plugin.BLE.Abstractions.deps.json",
+        "lib/Xamarin.iOS10/Plugin.BLE.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.BLE.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.BLE.XML",
+        "lib/Xamarin.iOS10/Plugin.BLE.dll",
+        "lib/Xamarin.iOS10/Plugin.BLE.pdb",
+        "lib/netstandard2.0/Plugin.BLE.Abstractions.deps.json",
+        "lib/netstandard2.0/Plugin.BLE.Abstractions.dll",
+        "lib/netstandard2.0/Plugin.BLE.Abstractions.pdb",
+        "lib/netstandard2.0/Plugin.BLE.deps.json",
+        "lib/netstandard2.0/Plugin.BLE.dll",
+        "lib/netstandard2.0/Plugin.BLE.pdb",
+        "lib/xamarinmac20/Plugin.BLE.Abstractions.deps.json",
+        "lib/xamarinmac20/Plugin.BLE.Abstractions.dll",
+        "lib/xamarinmac20/Plugin.BLE.Abstractions.pdb",
+        "lib/xamarinmac20/Plugin.BLE.dll",
+        "lib/xamarinmac20/Plugin.BLE.macOS.xml",
+        "plugin.ble.2.1.3.nupkg.sha512",
+        "plugin.ble.nuspec"
       ]
     },
     "Plugin.Permissions/6.0.1": {
@@ -871,6 +917,7 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
+      "Plugin.BLE >= 2.1.3",
       "Plugin.Permissions >= 6.0.1",
       "Xamarin.CommunityToolkit >= 2.0.4",
       "Xamarin.CommunityToolkit.Markup >= 2.0.4",
@@ -922,6 +969,10 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "Plugin.BLE": {
+            "target": "Package",
+            "version": "[2.1.3, )"
           },
           "Plugin.Permissions": {
             "target": "Package",

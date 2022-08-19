@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using
+using Plugin.BLE;
+using System.Threading.Tasks;
 
 namespace androidXamarin.ViewModels
 {
@@ -19,40 +22,20 @@ namespace androidXamarin.ViewModels
             ConnectCommand = new Command(OnConnectClicked);
         }
 
+        bool connected = false;
         private async void OnConnectClicked(object obj)
         {
-            if (CheckMcuConnection() == true)
-            {
-                // Prefixing with `//` switches to a different navigation stack instead of pushing to the active one
-                await Shell.Current.GoToAsync($"//{nameof(AboutPage)}");
-            }
+            CheckMcuConnectionAsync();
+            await Shell.Current.GoToAsync($"//{nameof(AboutPage)}");
         }
 
-        private bool CheckMcuConnection()
+        private async void CheckMcuConnectionAsync()
         {
-            bool RetVal = false;
-            BluetoothAdapter Adapter = BluetoothAdapter.DefaultAdapter;
-            if (Adapter == null)
-            {
-                Application.Current.MainPage.DisplayAlert("Bluetooth Error", "Bluetooth adapter is not detected.", "OK");
-            }
-            else if (Adapter.IsEnabled == false)
-            {
-                Application.Current.MainPage.DisplayAlert("Bluetooth Error", "Bluetooth adapter is not enabled.", "OK");
-            }
-            else
-            {
-                BluetoothDevice SelectedDevice = (from BondedDevice in Adapter.BondedDevices where BondedDevice.Name.ToString().Contains("ESP") select BondedDevice).FirstOrDefault();
-                if (SelectedDevice == null)
-                {
-                    Application.Current.MainPage.DisplayAlert("Bluetooth Error", "Pair with the MCU first.", "OK");
-                }
-                else
-                {
-                    RetVal = true;
-                }
-            }
-            return RetVal;
+            var ble = CrossBluetoothLE.Current;
+            var Adapter = CrossBluetoothLE.Current.Adapter;
+            List<Plugin.BLE.Abstractions.Contracts.IDevice> deviceList = null;
+            Adapter.DeviceDiscovered += (s, a) => deviceList.Add(a.Device);
+            await Adapter.StartScanningForDevicesAsync();
         }
     }
 }

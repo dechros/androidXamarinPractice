@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Fiv2H0KERUJBKg/ZPgN2D4HaywtqkFkX/N2FdyvFRZrXCZ+ur41EkMVV7YcIVinaNAoF6Ie8cEwmuQYT4QuMCQ==",
+  "dgSpecHash": "6lk+H/gaEFNKplVEB8hZxAtXMk7gwEG2j21Hb+vzMDsgY4ka56UDsHKCF5gAkaTKEVtJ+Y1OwAwuj0DgXUNQSw==",
   "success": true,
   "projectFilePath": "C:\\Users\\hcetin\\source\\repos\\androidXamarin\\androidXamarin\\androidXamarin.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hcetin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\hcetin\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\hcetin\\.nuget\\packages\\plugin.ble\\2.1.3\\plugin.ble.2.1.3.nupkg.sha512",
     "C:\\Users\\hcetin\\.nuget\\packages\\plugin.permissions\\6.0.1\\plugin.permissions.6.0.1.nupkg.sha512",
     "C:\\Users\\hcetin\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\hcetin\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.7.0\\system.reflection.emit.ilgeneration.4.7.0.nupkg.sha512",
