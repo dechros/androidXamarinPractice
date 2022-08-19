@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using Xamarin.Essentials;
 using Xamarin.Forms;
-using
 using Plugin.BLE;
 using System.Threading.Tasks;
 
